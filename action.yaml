@@ -1,6 +1,6 @@
-name: 'kubectl & helm'
+name: 'docker,kubectl & helm'
 author: 'Junv'
-description: 'A Github action for using kubectl and helm to deploy applications to Kubernetes cluster'
+description: 'A Github action for using docker, kubectl and helm to deploy applications to Kubernetes cluster'
 runs:
   using: 'docker'
   image: 'Dockerfile'
