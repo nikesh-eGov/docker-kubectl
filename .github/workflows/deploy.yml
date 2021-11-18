@@ -11,4 +11,4 @@ jobs:
       env:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
       with:
-        args: docker version && kubectl config get-contexts
+        args: kubectl config get-contexts && docker version
