@@ -1,9 +1,10 @@
 FROM dtzar/helm-kubectl:3.2.0
 
-WORKDIR /app
 RUN apk add docker
 
-COPY run.sh .
+WORKDIR /app
 
+COPY run.sh .
+RUN chmod +x run.sh
 ENTRYPOINT [ "/app/run.sh" ]
 
