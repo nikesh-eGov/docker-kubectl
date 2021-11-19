@@ -11,4 +11,4 @@ jobs:
       env:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA_DEV }}
       with:
-        args: kubectl get nodes
+        args: go version
