@@ -31,4 +31,4 @@ WORKDIR /app
 COPY run.sh .
 RUN chmod +x run.sh
 ENTRYPOINT [ "/app/run.sh" ]
-
+ENTRYPOINT ["/bin/bash"]
